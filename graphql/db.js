@@ -1,18 +1,19 @@
 export const people = [
     {
-        id: "1",
+        id: 1,
         name: "kimin",
         age: 29,
         gender: "female"
     },
     {
-        id: "2",
+        id: 2,
         name: "inhalin",
         age: 30,
         gender: "female"
     }
 ];
 
-const getById = id => {
-    const filterdPeople = people.filter(person => id === people.id )
+export const getById = id => {
+    const filterdPeople = people.filter(person => id === person.id );
+    return filterdPeople[0];
 }
